@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
    //pcap_setfilter(handle, &filter);
 
    handle=pcap_open_offline("C:\\Qt\\Qt5.3.0\\Progekt\\Pcap\\untitled\\mix.cap", errbuf);
-   cout<<"Введите количество пакетов, кт нужно посмотреть: "; int n; cin>>n;
+   cout<<"Введитe количество пакетов, кт нужно посмотреть: "; int n; cin>>n;
   for(int i=0;i<n;i++){
    pcap_next_ex(handle, &header, &pktData);
 
